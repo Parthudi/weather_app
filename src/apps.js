@@ -5,6 +5,7 @@ const geocode = require('./utils/geocode')
 const lalocode = require('./utils/lalocode')
 
 const appu = express()
+const port = process.env.PORT || 3000
 
 const pathdirectory     = path.join(__dirname, '../public')
 const routedirectory    = path.join(__dirname, '../templates/views')
@@ -108,8 +109,8 @@ appu.get('*', (req, res) => {
     })
 })
 
-appu.listen(3000, () => {
+appu.listen(port, () => {
 
-    console.log('your website is on process')
+    console.log('your website is on process' +port)
 })
 
