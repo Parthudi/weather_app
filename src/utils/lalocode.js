@@ -21,7 +21,8 @@ const lalocode = (latitude, longitude , callback) => {
                 place : laloresponse.body.location.region,
                 temp : laloresponse.body.current.temperature,
                 feel : laloresponse.body.current.feelslike,
-                forecast: laloresponse.body.current.weather_descriptions[0]
+                forecast: laloresponse.body.current.weather_descriptions[0],
+                precip: laloresponse.body.current.precip
              }
 
            )}

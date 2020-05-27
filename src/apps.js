@@ -58,7 +58,7 @@ appu.get('/weather', (req, res) => {
               })
            }
      
-        lalocode(latitude, longitude, (error, { temp , feel, forecast} = {}) => {
+        lalocode(latitude, longitude, (error, { temp , feel, forecast ,precip} = {}) => {
            if(error)
               {
                     return res.send({
@@ -70,7 +70,7 @@ appu.get('/weather', (req, res) => {
                 location ,
                 address: req.query.address,
                 forecast ,
-                temp
+                temp, precip
                
             })
      
