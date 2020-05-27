@@ -30,7 +30,7 @@ weatherform.addEventListener('submit', (event) => {
 
                 messageone.textContent = 'FORECAST: ' + data.forecast 
                 messagetwo.textContent = 'LOCATION: ' + data.location
-                messagethree.textContent = 'TEMPRATURE' + data.temp
+                messagethree.textContent = 'TEMPRATURE: ' + data.temp
     })
 })
 })
