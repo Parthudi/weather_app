@@ -1,0 +1,95 @@
+h2 {
+                background-color: lightskyblue;
+        
+}
+
+h3 {
+        background-color: yellow;
+}
+
+.p {
+     color: green;
+     text-decoration: bold;
+     background-color: red;
+}
+
+
+footer {
+            color: grey;
+            border-top: 1px solid grey;
+            
+}
+
+body {
+        background-image: url('../images/sky.jpg');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin-top: 10px ;
+       
+       
+        display: flex;
+        flex-direction: column ;
+        min-height: 93vh;
+}
+
+.fle {
+           flex-grow: 1;
+}
+
+h1 {
+        font-size: 40px;
+}
+
+header a {
+            color:purple;
+            text-decoration: none;
+            word-spacing: 15px;
+}
+
+img {
+        margin-top:10px;
+        height: 440px;
+        width: 270px;
+        margin-left: 310px
+}
+
+header {
+                margin-left: 333px;
+
+}
+
+.inp {
+                margin-left: 330px;
+                font-size: 15px;
+                padding: 6px;
+}
+
+#message-1 {
+               
+                background-color: plum;
+                margin-left: 315px;
+                font-family: sans-serif ;
+                font-weight: bolder;
+                margin-right: 910px;
+}
+
+#message-2 {
+                
+                background-color: plum;
+                margin-left: 315px;
+                font-family: sans-serif ;
+                font-weight: bolder;
+                margin-right: 910px;
+}
+ 
+button {
+        padding: 6px;
+}
+
+#mg {
+                width: 250px;
+                height: 250px;
+                margin-left: 950px;
+                margin-right: 300px;
+                
+        }
