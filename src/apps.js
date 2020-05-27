@@ -69,7 +69,8 @@ appu.get('/weather', (req, res) => {
               res.send({
                 location ,
                 address: req.query.address,
-                forecast 
+                forecast ,
+                temp
                
             })
      
