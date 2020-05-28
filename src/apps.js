@@ -38,7 +38,7 @@ appu.get('/about', (req, res) => {
 
     res.render('about', {
         title: 'ABOUT ME',
-        name: 'PARTH & RUTUJA'
+        name: 'PARTH PARMAR'
     } )
 })
 
