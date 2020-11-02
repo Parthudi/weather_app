@@ -22,7 +22,7 @@ const geocode = (address, callback) => {
                  })
                 
            }
-  
+  console.log(geocode.js)
      })
 }
 

@@ -2,8 +2,12 @@
      <head>
             <title> WEATHER APPLICATION</title>
 
-            <link rel ='icon' href='images/cloud.png' </link>
-            <link rel ='stylesheet' href="css/style.css">
+            <link rel ='icon' href='images/cloud.png'>  </link>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+            <link rel ='stylesheet' href="css/style.css">  
+            
+            
             
      </head>
 
@@ -12,9 +16,9 @@
                       {{>header}}  </br></br></br>
 
        <form>
-                      <input type='text' id='papu' class='inp' placeholder='location' autocomplete="off">
+                      <input type='search'  class='inp' placeholder='location' autocomplete="off">
                       <button> Search </button>
-       </form> </br></br></br></br></br></br></br></br>
+       </form> </br></br></br></br>
           
           <p id='message-1'> </p>
 
@@ -24,6 +28,7 @@
 
           <p id='message-4'> </p>
 
+          <p id='message-5'> </p>
             </div>
            
          {{>footer}}        

@@ -1,6 +1,10 @@
+.hhh {
+        background-color: lightskyblue;      
+}
+
 h2 {
-                background-color: lightskyblue;
-        
+        text-decoration: underline;
+        text-align: justify;
 }
 
 h3 {
@@ -21,15 +25,17 @@ footer {
 }
 
 body {
-        background-image: url('../images/sky.jpg');
-        background-repeat: no-repeat;
-        background-size: 100%;
         margin-top: 10px ;
-       
-       
+        font-style: 'Sansita Swashed', cursive ;
         display: flex;
         flex-direction: column ;
         min-height: 93vh;
+        
+        background: linear-gradient(
+        to left,
+         rgb(205, 221, 64) 0%,
+         rgb(96, 197, 146) 100%
+  );
 }
 
 .fle {
@@ -38,19 +44,41 @@ body {
 
 h1 {
         font-size: 40px;
+        display: inline-block;
+        direction: column;
+        animation-name: parth;
+        animation-duration: 60s;
 }
+
+@keyframes parth {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+      }
 
 header a {
-            color:purple;
+            color:rgb(146, 56, 86);
             text-decoration: none;
-            word-spacing: 15px;
+            word-spacing: 20px;
 }
 
-img {
+header a:hover {
+        color: rgb(16, 76, 83);
+        text-decoration: none;
+        transform : scalex(1.6);
+}
+
+.myprofile {
         margin-top:10px;
         height: 440px;
-        width: 270px;
+        width: 300px;
         margin-left: 310px
+}
+
+.myprofile:hover {
+        transform: scaleX(1.5);
 }
 
 header {
@@ -65,49 +93,98 @@ header {
 }
 
 #message-1 {
-               
-                background-color: plum;
-                margin-left: 315px;
+
+                display: block;
+                direction: column;
+                text-align: center;
                 font-family: sans-serif ;
                 font-weight: bolder;
-                margin-right: 900px;
+                background: linear-gradient(
+                        to left,
+                         rgb(217, 219, 107) 20%,
+                         rgb(127, 200, 212) 80% )
+                
 }
 
 #message-2 {
                 
-                background-color: plum;
-                margin-left: 315px;
+        background: linear-gradient(
+                to left,
+                 rgb(217, 219, 107) 20%,
+                 rgb(127, 200, 212) 80% );
+        
+                direction: column;
+                display: block;
+                text-align: center;
                 font-family: sans-serif ;
                 font-weight: bolder;
-                margin-right: 900px;
 }
  
 #message-3 {
 
-        background-color: plum;
-        margin-left: 315px;
+        background: linear-gradient(
+                to left,
+                 rgb(217, 219, 107) 20%,
+                 rgb(127, 200, 212) 80% );
+        direction: column;
+        display: block;
+        text-align: center;
         font-family: sans-serif ;
         font-weight: bolder;
-        margin-right: 900px;
 }
 
 #message-4 {
-        background-color: plum;
-        margin-left: 315px;
+        background: linear-gradient(
+                to left,
+                 rgb(217, 219, 107) 20%,
+                 rgb(127, 200, 212) 80% );
+        display: inline-block;
+        display: block;
+        text-align: center;
         font-family: sans-serif ;
         font-weight: bolder;
-        margin-right: 900px;
-
 }
 
+#message-5 {
+
+        background: linear-gradient(
+                to left,
+                 rgb(217, 219, 107) 20%,
+                 rgb(127, 200, 212) 80% );
+        direction: column;
+        display: block;
+        text-align: center;
+        font-family: sans-serif ;
+        font-weight: bolder;
+}
 button {
         padding: 6px;
-}
+        background: linear-gradient(
+                to left,
+                 rgb(217, 219, 107) 20%,
+                 rgb(127, 200, 212) 80% )
+        }
 
 #mg {
-                width: 250px;
-                height: 250px;
-                margin-left: 950px;
-                margin-right: 300px;
-                
+                width: 60px;
+                height: 60px;
+                margin-left: 20px;
+                margin-top: -18px;
         }
+
+.more-info{
+                display : none;
+        }
+.inpar {
+        width: 250px;
+        padding: 3px;
+        }
+
+.area {
+        width: 400px;
+        }
+
+.button:focus,
+.button:hover {
+        border:none
+}

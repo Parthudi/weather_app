@@ -4,19 +4,49 @@
 
         <link rel ='icon' href='images/cloud.png' </link>
         <link rel ='stylesheet' href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script>
+             $(document).ready(function(){
+
+                  $('.fle').on('click','.button', function(){
+       
+                  $(this).parent().find('.more-info').fadeToggle(1000);
+                  $(this)
+                     .animate({'opacity': 0.5 , 'margin-left': 50 }, 'fast')
+                     .animate({'opacity': 1.0 , 'margin-left': 0 }, 'medium');
+            });
+         });
+         
+        </script>
+       
      </head>
 
      <body>
-             <div class="fle">
 
-                       {{>header}} 
+             <div class="fle" >
 
-                       <img id='mg' src='./images/cloud.png'> </img>
+                   {{>header}}  <br><br>
 
-             </div>
+                     <div class="items">
+
+                         <button class='button'> Query? Click me </button> <br><br><br>
+                         <div class="more-info"> 
+                            
+                             <form>
+                                 <input type='text' name='email' placeholder="your e-mail" class='inpar'> <br><br>
+                                 <textarea name='query' placeholder="write your query!!" cols='30' rows='10' class='area'></textarea> <br><br>
+                                 <button value='submit'> send </button>
+                             </form>
+
+                             </div>
+
+                      </div>    
+               </div>
 
             {{>footer}} 
 
      </body>
 
 </html>
+

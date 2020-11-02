@@ -17,12 +17,13 @@ const lalocode = (latitude, longitude , callback) => {
        else{
              callback(undefined, {
 
-                name : laloresponse.body.location.name,
-                place : laloresponse.body.location.region,
-                temp : laloresponse.body.current.temperature,
-                feel : laloresponse.body.current.feelslike,
-                forecast: laloresponse.body.current.weather_descriptions[0],
-                precip: laloresponse.body.current.precip
+                name     : laloresponse.body.location.name,
+                place    : laloresponse.body.location.region,
+                temp     : laloresponse.body.current.temperature,
+                feel     : laloresponse.body.current.feelslike,
+                forecast : laloresponse.body.current.weather_descriptions,
+                precip   : laloresponse.body.current.precip,
+                humidity : laloresponse.body.current.humidity
              }
 
            )}
